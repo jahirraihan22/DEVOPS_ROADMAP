@@ -109,7 +109,7 @@ microservice:
 
 ***Note:*** for boolean there multiple are supported keywords like yes/no , true/false, on/off
 
-## Environment variables
+## Environment Variables
 
 ```yaml
 command: 
@@ -139,7 +139,7 @@ spec:
 
 ***Note:*** {{ }} Is used for Placeholder to use dynamic value instead of using environment variable
 
-## Multiple document
+## Multiple Document
 
 ```yaml
 
