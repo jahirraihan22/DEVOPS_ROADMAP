@@ -2,6 +2,12 @@
 
 # YAML 101
 
+## Introduction
+
+**YAML** is a data serialization language. It is one of the most formatting languages display data in a non-human readable format. It become more popular than XML or JSON because of it's readability and it represents way more easier than those languages. It is nearly human readable language. The acronym was later changed to **"YAML Ain’t Markup Language”**  to emphasize that the language is intended for data and not documents. **YAML** is a common option when it comes to writing configuration files for Infrastructure as a Code (IaC). This files are used to store parameters and settings for desired cloud environment. Many Configuration management tools are using **YAML**. It is more secure when exchanging files with third parties because it has no executable commands. It's file extension is *.yml*
+
+## Basic Syntax
+
 ```yaml
 microservice:
   app: user-authentication
