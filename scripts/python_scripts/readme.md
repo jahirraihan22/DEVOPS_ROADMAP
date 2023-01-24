@@ -7,7 +7,7 @@
 # give permission
 
 
-    sudo chmod 777 template_py
+    sudo chmod +x template_py
    
    
 # move it to bin, so that we can use it like a command
