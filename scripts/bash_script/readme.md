@@ -7,7 +7,7 @@
 # give permission
 
 
-    sudo chmod 777 template
+    sudo chmod +x template
    
    
 # move it to bin, so that we can use it like a command
