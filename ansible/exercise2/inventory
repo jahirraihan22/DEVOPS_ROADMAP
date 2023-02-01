@@ -1,0 +1,23 @@
+web01 ansible_host=10.0.0.156 ansible_user=ec2-user
+web02 ansible_host=10.0.0.254 ansible_user=ec2-user
+db01  ansible_host=10.0.0.78 ansible_user=ec2-user
+
+
+[webservergrp]
+web01
+web02
+
+
+[dbservergrp]
+db01
+
+
+[commongrp:children]
+webservergrp
+dbservergrp
+
+
+
+[commongrp:vars]
+ansible_user=ec2-user
+ansible_ssh_private_key_file=web_key.pem

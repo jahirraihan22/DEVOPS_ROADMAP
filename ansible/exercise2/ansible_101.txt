@@ -1,0 +1,97 @@
+    1  clear
+    2  ansible -v
+    3  ansible --version
+    4  clear
+    5  mkdir vprofile
+    6  cd vprofile/
+    7  mkdir exercise1
+    8  ls
+    9  cd exercise1/
+   10  clear
+   11  vim inventory
+   12  vim web_key.pem
+   13  sudo chmod 400 web_key.pem 
+   14  vim inventory
+   15  clear
+   16  ansible -i inventory -m ping web01
+   17  sudo vim /etc/ansible/ansible.cfg 
+   18  ansible -i inventory -m ping web01
+   19  sudo vim /etc/ansible/ansible.cfg 
+   20  ansible-config init --disabled > ansible.cfg
+   21  sudo vim /etc/ansible/ansible.cfg 
+   22  ansible-config init --disabled -t all > ansible.cfg
+   23  sudo vim /etc/ansible/ansible.cfg 
+   24  ansible -i inventory -m ping web01
+   25  sudo vim /etc/ansible/ansible.cfg 
+   26  ansible -i inventory -m ping web01
+   27  sudo vim /etc/ansible/ansible.cfg 
+   28  ansible --version
+   29  cd vprofile/exercise1/
+   30  clear
+   31  ansible -i inventory -m ping web01
+   32  sudo vim /etc/ansible/ansible.cfg 
+   33  ansible -i inventory -m ping web01
+   34  vim ~/.ansible.cfg
+   35  ansible -i inventory -m ping web01
+   36  sudo vim /etc/ansible/ansible.cfg
+   37  ansible -i inventory -m ping web01
+   38  sudo vim /etc/ansible/ansible.cfg
+   39  sudo "" > /etc/ansible/ansible.cfg
+   40  sudo echo " " > /etc/ansible/ansible.cfg
+   41  echo " " > /etc/ansible/ansible.cfg
+   42  sudo echo " " > /etc/ansible/ansible.cfg
+   43  sudo vim /etc/ansible/ansible.cfg
+   44  ls
+   45  cat ansible.cfg 
+   46  vim ansible.cfg 
+   47  ansible -i inventory -m ping web01
+   48  clear
+   49  ansible -i inventory -m ping web02
+   50  vim inventory 
+   51  ansible -i inventory -m ping webservergrp
+   52  ansible -i inventory -m ping db01
+   53  clear
+   54  vim inventory 
+   55  ansible -i inventory -m ping webservergrp
+   56  ansible -i inventory -m ping dbservergrp
+   57  vim inventory 
+   58  ansible -i inventory -m ping  "*"
+   59  clear
+   60  ansible -i inventory -m yum -a "name=httpd state=present" web01
+   61  ansible -i inventory -m yum -a "name=httpd state=present" web01 --become
+   62  ansible -i inventory -m service -a "name=httpd state=started" web01 --become
+   63  ansible -i inventory -m service -a "name=httpd state=started enabled=yes" web01 --become
+   64  clear
+   65  vim index.html
+   66  ansible -i inventory -m copy -a "src=index.html dest=/var/www/html/index.html" web01 --become
+   67  clear
+   68  ls
+   69  history > ansible_101.txt
+   70  ls
+   71  cd
+   72  ls
+   73  vprofile/
+   74  cd vprofile/
+   75  sudo su
+   76  cd exercise1/
+   77  ls
+   78  cd ../
+   79  cp -r exercise1/ exercise2/
+   80  cd exercise2/
+   81  ls
+   82  vim web_db.yml
+   83  ansible-playbook web_db.yml  --syntax-check
+   84  ansible-playbook -i inventory web_db.yml  --syntax-check
+   85  vim web_db.yml
+   86  ansible-playbook -i inventory web_db.yml  --syntax-check
+   87  ansible -i inventory -m yum -a "name=httpd state=absent" --become
+   88  ansible -i inventory -m yum -a "name=httpd state=absent" web01 --become
+   89  vim web_db.yml
+   90  cat ansible_101.txt 
+   91  vim web_db.yml
+   92  vim index.html 
+   93  ansible-playbook -i inventory web_db.yml  --syntax-check
+   94  ansible-playbook -i inventory web_db.yml
+   95  vim web_db.yml
+   96  clear
+   97  history > ansible_101.txt 
