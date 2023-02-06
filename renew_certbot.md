@@ -1,10 +1,11 @@
-anaging Certbot certificates is often an underlooked operation since Certbot handles cert renewal automatically using a cronjob, so no worries there. But, what if we want to list which certificates are already installed, or we want to remove some of them properly. Today’s topic is all about listing, renewing and removing Certbot certificates.
+Managing Certbot certificates is often an underlooked operation since Certbot handles cert renewal automatically using a cronjob, so no worries there. But, what if we want to list which certificates are already installed, or we want to remove some of them properly. Today’s topic is all about listing, renewing and removing Certbot certificates.
 
 Prerequisites
 Web server
 Certbot
 sudo privileges
 Renew certificates
+
 Step 1. List certificates.
 
     sudo certbot certificates
