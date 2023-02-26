@@ -11,3 +11,10 @@
     2253  istioctl version
     2254  clear
     2255  istioctl verify-install
+
+
+
+
+#### COMMANDS
+
+    istioctl analyze
