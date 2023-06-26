@@ -30,7 +30,7 @@
 11. Last subnet will be start `192.168.192.0` to `192.168.255.255` (`11000000.10101000.11000000.00000000` to `11000000.10101000.11111111.11111111`)
 
 ### The IP CIDR Ranges for each subnet will be:
-Subnet 1: IP CIDR Range = "192.168.0.0/18"
-Subnet 2: IP CIDR Range = "192.168.64.0/18"
-Subnet 3: IP CIDR Range = "192.168.128.0/18"
-Subnet 4: IP CIDR Range = "192.168.192.0/18"
+- Subnet 1: IP CIDR Range = "192.168.0.0/18"
+- Subnet 2: IP CIDR Range = "192.168.64.0/18"
+- Subnet 3: IP CIDR Range = "192.168.128.0/18"
+- Subnet 4: IP CIDR Range = "192.168.192.0/18"
