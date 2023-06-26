@@ -34,3 +34,17 @@
 - Subnet 2: IP CIDR Range = "192.168.64.0/18"
 - Subnet 3: IP CIDR Range = "192.168.128.0/18"
 - Subnet 4: IP CIDR Range = "192.168.192.0/18"
+
+### [CIDR Available Networks (subnetting)](https://erikberg.com/notes/networks.html)
+How many /29 networks can fit into a /24 network? Or how many /21 networks can fit into a /17 network? The best way to explain the formula is to show it. The following illustrates how many /21 networks can fit into a /17 network.
+
+- Subtract the network bits from 32.
+  /17 = 32-17 and /21 = 32-21
+- Raise 2 to that power.
+  232-17 and 232-21
+- Divide the larger network by the smaller one.
+  232-17 / 232-21 = 215 / 211 = 215-11 = 24 = 16
+
+As the example shows, a /17 network could be divided into sixteen /21 networks. Spot the shortcut in the steps? How many /29 networks in a /24?
+
+28-3 = 25 = 32
